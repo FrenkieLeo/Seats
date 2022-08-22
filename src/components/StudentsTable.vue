@@ -108,7 +108,7 @@ let data =[
   { x: 11, y: 7, w: 1, h: 2, i: "95", c: "name" },
 ]
 let Seats = useSeatsStore();
-let layout = ref([])
+let layout:any = ref([])
 
 async function checkExist(table:any){
   const result = await table.get(1)
@@ -136,7 +136,6 @@ async function initData(){
 onMounted(()=>{
    try{
     initData();
-    window.document.addEventListener('keydown',handleSave,false);
    }catch(err){
     console.log(err)
    }
@@ -145,7 +144,7 @@ onMounted(()=>{
 
 const handleItem = (i:string)=>{
   const el = document.getElementById(i);
-  const layoutTarget = layout.value[Number(i)]
+  const layoutTarget:any = layout.value[Number(i)]
   el!.innerHTML = `<input style='border: 1px solid #ccc; border-radius: 3px;width: 83%;height: 78%;font-size: 1rem;' :id='newName${i}' :value='${layoutTarget.c}' placeholder='姓名'  />`
   el?.addEventListener('keydown',(e)=>{
     const inputValue = el.childNodes[0] as HTMLInputElement
