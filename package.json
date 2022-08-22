@@ -10,6 +10,11 @@
   },
   "dependencies": {
     "@thefoot/vue-grid-designer": "^1.0.5",
+    "@vueuse/rxjs": "^9.1.0",
+    "dexie": "^3.2.2",
+    "godb": "^0.6.2",
+    "pinia": "^2.0.17",
+    "rxjs": "^7.5.6",
     "sortablejs": "^1.15.0",
     "vue": "^3.2.37",
     "vue-grid-layout": "^3.0.0-beta1",
