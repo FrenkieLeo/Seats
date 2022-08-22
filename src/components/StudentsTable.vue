@@ -181,7 +181,7 @@ function layoutUpdatedEvent(newLayout:any){
             :col-num="12"
             :row-height="30"
             :is-draggable="true"
-            :is-resizable="true"
+            :is-resizable="false"
             :is-mirrored="false"
             :vertical-compact="true"
             :margin="[10, 10]"
