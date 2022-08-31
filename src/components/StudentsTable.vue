@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { getInnerRange } from '@vue/compiler-core';
-import { computed } from '@vue/reactivity';
-import { HtmlAttributes } from 'csstype';
 import {ref,reactive, onMounted, onUpdated} from 'vue';
 import { useSeatsStore } from '../store/seats';
 let index= ref(1);
