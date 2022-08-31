@@ -23,7 +23,7 @@ async function exportSeats(role: string){
   XLSX.utils.book_append_sheet(wb, ws, "Data");
   XLSX.writeFileXLSX(wb,`座位表 ${version}.xlsx`,{bookType:'xlsx',type:'string'})
 }
-// 终于搞定，我好菜
+// 终于搞定，我好菜,做了好久了哭哭
 function rotateData(data:any[]){
   let n = data.length
   let m = data[0].length
